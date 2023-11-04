@@ -2080,8 +2080,8 @@ h6 {
 	}
 }
 #Top_bar #logo, .header-fixed #Top_bar #logo, .header-plain #Top_bar #logo, .header-transparent #Top_bar #logo {
-	height: 60px;
-	line-height: 60px;
+	height: 55px;
+	line-height: 55px;
 	padding: 13px 0;
 }
 .logo-overflow #Top_bar:not(.is-sticky) .logo {
