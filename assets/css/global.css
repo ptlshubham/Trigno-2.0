@@ -782,7 +782,7 @@ a:hover.tp-button.lightgrey {
 	/* Animation center compensation - margins should be symmetric */
 	/* remove if not needed */
 	margin-left: .2em;
-	margin-top: 1em;
+	margin-top: 1.5em;
 	/* color: #ec6703; */
 	/* you can be more comfortable with increased icons size */
 	/* font-size: 120%; */

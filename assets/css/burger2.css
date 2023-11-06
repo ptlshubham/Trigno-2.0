@@ -2192,7 +2192,7 @@ input[type="date"], input[type="email"], input[type="number"], input[type="passw
 @media only screen and (max-width: 767px) {
 	.mobile-header-mini #Top_bar .container {
 		width: 100%!important;
-		height: 115px !important;
+		height: 95px !important;
 	}
 	.section_wrapper, .container, .four.columns .widget-area {
 		width: calc(100% - 67px)!important;
@@ -2421,7 +2421,7 @@ p.flv_align_right, div.flv_align_right {
 	}
 	#Top_bar #logo img.logo-mobile {
 		display: inline-block;
-		max-height: 115px !important;
+		max-height: 95px !important;
 	}
 	.logo-overflow #Top_bar .logo {
 		height: auto!important
