@@ -7593,3 +7593,9 @@ body {
 #Content .gallery:not(.gallery-columns-1) .gallery-item {
     width: 50%;
 }}
+@media only screen and (max-width: 767px) and (min-width: 480px){
+    #Content .section-mcb-section .column-one-fifth {
+        width :10%
+    
+    }}
+
