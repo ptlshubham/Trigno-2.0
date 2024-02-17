@@ -37,6 +37,95 @@
     <link rel='stylesheet' href='assets/css/burger2.css'>
     <link rel='stylesheet' href='assets/css/custom.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .button-group {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .button-group .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: black;
+            color: #ff8125;
+            font-style: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.4s;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .button-group .button.active {
+            background-color: #ff8125;
+            color: white;
+        }
+
+        .button-group .button:hover {
+            background-color: #ff8125;
+            color: white;
+        }
+
+        .gallery1 {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 100px;
+            margin-left: 50px;
+            margin-right: 50px;
+
+        }
+
+        .gallery1 .item1 {
+            position: relative;
+            margin: 4px;
+            width: calc(50% - 8px);
+            overflow: hidden;
+            cursor: pointer;
+            margin-bottom: 50px;
+        }
+
+        .item1 img {
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+            display: block;
+            transition: 0.3s;
+        }
+
+        @media(max-width: 1024px) {
+            div.gallery1 .item1 {
+                width: calc(100% - 8px);
+                align-items: center;
+            }
+        }
+
+        @media(max-width: 600px) {
+            div.gallery1 .item1 {
+                padding-right: 50px;
+                align-items: center;
+                margin-left: 30px;
+                /* width: 100%; */
+                margin: 4px 0px;
+            }
+        }
+
+        /* @media (max-width: 767px) {
+            .button-group {
+                margin-top: 20px;
+            }
+
+            .gallery1 .item1 {
+                width: 100%;
+            }
+        } */
+    </style>
+
 
 </head>
 
@@ -102,13 +191,104 @@
                 <div class="item active">
                     <img src="assets/images/slider/home_banners_1.jpg" alt="home_banners_1">
                 </div>
+                <div class="button-group">
+                    <button class="button active" data-filter="*">All Menus</button>
+                    <button class="button " data-filter=".unlimited">Unlimited</button>
+                    <button class="button" data-filter=".alacarte">A La Carte</button>
 
+                </div>
                 <div class="sections_group" id="section">
                     <div class="section mcb-section">
                         <div class="section_wrapper mcb-section-inner" style="max-width: 1398px !important; ">
                             <div class="wrap mcb-wrap one valign-middle clearfix">
                                 <div class="mcb-wrap-inner">
                                     <div id="ahm" style="display: block;">
+                                        <div class="section mcb-section no-margin-v " style="margin: 30px;">
+                                            <div class="wrap mcb-wrap one  valign-top clearfix">
+                                                <!-- <div class="gallery1">
+
+                                                    <div class="item1 unlimited">
+                                                        <a href="assets/images/Menu/menu page 1.jpg" data-glightbox
+                                                            data-gallery="g1"><img
+                                                                src="assets/images/Menu/menu page 1.jpg"></a>
+                                                    </div>
+                                                    <div class="item1 unlimited">
+                                                        <a href="assets/images/Menu/menu page 2.jpg" data-glightbox
+                                                            data-gallery="g1"><img
+                                                                src="assets/images/Menu/menu page 2.jpg"></a>
+                                                    </div>
+                                                    <div class="item1 unlimited">
+                                                        <a href="assets/images/Menu/menu page 3.jpg" data-glightbox
+                                                            data-gallery="g1"><img
+                                                                src="assets/images/Menu/menu page 3.jpg"></a>
+                                                    </div>
+                                                    <div class="item1 unlimited">
+                                                        <a href="assets/images/Menu/menu page 4.jpg" data-glightbox
+                                                            data-gallery="g1"><img
+                                                                src="assets/images/Menu/menu page 4.jpg"></a>
+                                                    </div>
+                                                    <div class="item1 unlimited">
+                                                        <a href="assets/images/Menu/menu page 5.jpg" data-glightbox
+                                                            data-gallery="g1"><img
+                                                                src="assets/images/Menu/menu page 5.jpg"></a>
+                                                    </div>
+                                                    <div class="item1 alacarte">
+                                                        <a href="assets/images/Menu/alacarte.jpg" ta-glightbox
+                                                            data-gallery="g1"><img src="assets/images/Menu/alacarte.jpg"
+                                                                a>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div id="ahm" style="display: block;">
+                                        <div class="section mcb-section no-margin-v " style="margin: 30px;">
+                                            <div class="wrap mcb-wrap one  valign-top clearfix">
+                                                <div class="mcb-wrap-inner">
+                                                    <p class="big"><b>Ala Carte Menu</b></p>
+                                                    <div class="column mcb-column one-second column_placeholder">
+                                                        <img src="assets/images/Menu/alacarte.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <!-- <main class="mainContainer mt-14 mb-14" data-cues="slideInDown" data-delay="500"> -->
+
+
+
+                                    <div class="gallery1">
+
+                                        <div class="item1 unlimited">
+                                            <a href="assets/images/Menu/menu page 1.jpg" data-glightbox
+                                                data-gallery="g1"><img src="assets/images/Menu/menu page 1.jpg"></a>
+                                        </div>
+                                        <div class="item1 unlimited">
+                                            <a href="assets/images/Menu/menu page 2.jpg" data-glightbox
+                                                data-gallery="g1"><img src="assets/images/Menu/menu page 2.jpg"></a>
+                                        </div>
+                                        <div class="item1 unlimited">
+                                            <a href="assets/images/Menu/menu page 3.jpg" data-glightbox
+                                                data-gallery="g1"><img src="assets/images/Menu/menu page 3.jpg"></a>
+                                        </div>
+                                        <div class="item1 unlimited">
+                                            <a href="assets/images/Menu/menu page 4.jpg" data-glightbox
+                                                data-gallery="g1"><img src="assets/images/Menu/menu page 4.jpg"></a>
+                                        </div>
+                                        <div class="item1 alacarte">
+                                            <a href="assets/images/Menu/alacarte.jpg" ta-glightbox
+                                                data-gallery="g1"><img src="assets/images/Menu/alacarte.jpg" a>
+                                        </div>
+                                        <div class="item1 alacarte unlimited">
+                                            <a href="assets/images/Menu/menu page 5.jpg" data-glightbox
+                                                data-gallery="g1"><img src="assets/images/Menu/menu page 5.jpg"></a>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- </main> -->
+                                    <!-- <div id="ahm" style="display: block;">
                                         <div class="section mcb-section no-margin-v " style="margin: 30px;">
                                             <div class="wrap mcb-wrap one  valign-top clearfix">
                                                 <div class="mcb-wrap-inner">
@@ -130,7 +310,34 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
+                                    <!-- <div class="gallery1">
+
+                                        <div class="item1 unlimited">
+                                            <a href="assets/images/Menu/menu page 1.jpg" data-glightbox
+                                                data-gallery="g1"><img src="assets/images/Menu/menu page 1.jpg"></a>
+                                        </div>
+                                        <div class="item1 unlimited">
+                                            <a href="assets/images/Menu/menu page 2.jpg" data-glightbox
+                                                data-gallery="g1"><img src="assets/images/Menu/menu page 2.jpg"></a>
+                                        </div>
+                                        <div class="item1 unlimited">
+                                            <a href="assets/images/Menu/menu page 3.jpg" data-glightbox
+                                                data-gallery="g1"><img src="assets/images/Menu/menu page 3.jpg"></a>
+                                        </div>
+                                        <div class="item1 unlimited">
+                                            <a href="assets/images/Menu/menu page 4.jpg" data-glightbox
+                                                data-gallery="g1"><img src="assets/images/Menu/menu page 4.jpg"></a>
+                                        </div>
+                                        <div class="item1 unlimited">
+                                            <a href="assets/images/Menu/menu page 5.jpg" data-glightbox
+                                                data-gallery="g1"><img src="assets/images/Menu/menu page 5.jpg"></a>
+                                        </div>
+                                        <div class="item1 alacarte">
+                                            <a href="assets/images/Menu/alacarte.jpg" ta-glightbox
+                                                data-gallery="g1"><img src="assets/images/Menu/alacarte.jpg" a>
+                                        </div>
+                                    </div> -->
 
                                 </div>
                             </div>
@@ -152,13 +359,18 @@
                             <div style="margin-right: 10%;">
                                 <h4> About Us</h4>
                                 <p style=" color: white; text-align: justify;">
-                                    " Trigno Pizza was born out of a deep love for exceptional food, with a mission to
-                                    share the essence of New York-style pizza with the world. Our dedicated founders,
-                                    true food enthusiasts, set out to create the legendary thin, crispy crust topped
-                                    with the finest, freshest ingredients. Enjoy a taste of New York on your plate. "
-
+                                    " Trigno Pizza was born out of a deep love for exceptional food, with a
+                                    mission to share the essence of New York-style pizza with the world. Our
+                                    dedicated founders, true food enthusiasts, set out to create the legendary
+                                    thin, crispy crust topped with the finest, freshest ingredients. Enjoy a
+                                    taste of New York on your plate. "
+                                    <!-- 2nd Floor, Kamalraj Complex,   
+                                    <br> opp. B&B Polytechnic College,
+                                    <br> Iskon Road, 
+                                    <br><a>Vallabh Vidyanagar,</a> s
+                                    <br> Anand, Gujarat 388120 -->
                                 </p>
-                                <p>Fssai: 1 23 19 678 901234</p>
+                                <p><b>FSSAI</b>: 1 23 19 678 901234</p>
                             </div>
                         </div>
                     </aside>
@@ -167,12 +379,11 @@
                     <aside class="widget widget_text ">
                         <div class="textwidget">
                             <h4>Locations</h4>
-                            <!-- <hr class="no_line" style="margin:0 auto 10px"> -->
+
                             <p style=" color: white; text-align: justify;">4, wing - B, 1st floor ,<br>Siddharth
                                 Annexe,<br> Sama-Savli Rd, <br>above Jagdish
                                 Farshan, <br>nr.
                                 Bansal Mall, <br>Vadodara, Gujarat</p>
-
                         </div>
                     </aside>
                 </div>
@@ -180,19 +391,20 @@
                     <aside class="widget_text widget widget_custom_html">
                         <div class="textwidget custom-html-widget">
                             <h4>Contact us</h4>
+
+
                             <i class="icon-email"></i><a href="mailto:info@trigno.com">info@trigno.com</a> <br>
-                            <i class="icon-call"></i> <a href="tel:+91 93270
-                            71596">93270
-                                71596</a>
+                            <i class="icon-call"></i> <a href="tel:+91 93270 71596">93270 71596</a>
+
                             <p style="font-size: 20px;">
 
                                 <a href="https://www.facebook.com/trignopizza" target="_blank"><i
                                         class="icon-facebook"></i></a>
                                 <a href="https://www.instagram.com/trignopizza/" target="_blank"><i
                                         class="icon-instagram"></i></a>
-                                <a href="https://www.flaticon.com/free-icon/whatsapp_1384023" target="_blank"><i
-                                        class="fa-brands fa-whatsapp" style="margin-left: 10px;"></i></a>
-                                <a href="https://business.google.com/reviews" target="_blank"><i
+                                <a href="https://wa.me/919327071596" target="_blank"><i class="fa-brands fa-whatsapp"
+                                        style="margin-left: 10px;"></i></a>
+                                <a href="https://www.google.com/search?q=trigno+pizza+#ip=1" target="_blank"><i
                                         class="fa-brands fa-google fa-sm" style="margin-left: 15px;"></i></a>
 
                             </p>
@@ -224,19 +436,33 @@
                     </aside>
                 </div>
             </div>
-        </div>
-        <div class="footer_copy">
-            <div class="container">
-                <div class="column one">
-                    <a id="back_to_top" class="button button_js" href="#"><i class="icon-up-open-big"
-                            style="font-size: 70% !important;"></i></a>
-                    <div class="copyright">
-                        &copy;
-                        2023 Developed by <a target="_blank" rel="nofollow" href="https://keryar.com/">Keryar</a>
+            <!-- 
+                        <div class="column one-fourth">
+                        <aside class="widget_text widget widget_custom_html">
+                            <div class="textwidget custom-html-widget">
+                                <h4>Find us here</h4>
+                                <hr class="no_line" style="margin:0 auto 10px">
+                                <p  style="font-size: 20px;">
+                                    <a href="https://www.facebook.com/grillkitchenvvn" target="_blank"><i class="icon-facebook"></i></a>
+                                    <a href="https://www.instagram.com/grillkitchenvvn" target="_blank"><i class="icon-instagram"></i></a>
+                                    <a href="#"><i class="icon-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/company/78393455" target="_blank"><i class="icon-linkedin"></i></a>
+                                </p>
+                            </div>
+                        </aside>
+                    </div> -->
+            <div class="footer_copy">
+                <div class="container">
+                    <div class="column one">
+                        <a id="back_to_top" class="button button_js" href="#"><i class="icon-up-open-big"
+                                style="font-size: 70% !important;"></i></a>
+                        <div class="copyright">
+                            &copy;
+                            2024 Developed by <a target="_blank" rel="nofollow" href="https://keryar.com/">Keryar</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
 
     <!-- side menu-->
@@ -257,6 +483,22 @@
     <script src="assets/js/translate3d.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var $galleryContainer = $('.gallery1').isotope({
+            itemSelector: '.item1',
+            layoutMode: 'fitRows'
+        })
+
+        $('.button-group .button').on('click', function () {
+            $('.button-group .button').removeClass('active');
+            $(this).addClass('active');
+
+            var value = $(this).attr('data-filter');
+            $galleryContainer.isotope({
+                filter: value
+            })
+        })
+    </script>
 
 </body>
 
